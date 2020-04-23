@@ -6,7 +6,7 @@ spring:
     name: cloud-payment-service
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.1.232:3306/springcloud2020?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
     username: root
     password: 123456
@@ -22,7 +22,7 @@ spring:
 
 
 
-mybatis-plus:
+mybatis:
   # 实体类的存放路径
-  type-aliases-package: com.github.greekpanda.entities
+  type-aliases-package: com.github.greekpanda.springcloud2020.entities
   mapper-locations: classpath:mapper/*.xml
