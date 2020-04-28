@@ -1,0 +1,43 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-zookpeer-service
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.232:3306/springcloud2020?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.232:2181
+
+
+
+mybatis:
+  # 实体类的存放路径
+  type-aliases-package: com.github.greekpanda.springcloud2020.entities
+  mapper-locations: classpath:mapper/*.xml
+
+
+#  redis:
+#    cluster:
+#      nodes:
+#        - 192.168.0.112:7001
+#        - 192.168.0.112:7002
+#        - 192.168.0.112:7003
+#        - 192.168.0.112:7004
+#        - 192.168.0.112:7005
+#        - 192.168.0.112:7006
