@@ -1,9 +1,9 @@
 server:
-  port: 7001
+  port: 7002
 
 spring:
   application:
-    name: cloud-eureka-service7001
+    name: cloud-eureka-service7002
 
 eureka:
   instance:
