@@ -17,6 +17,7 @@
         <module>provider-order-payment-zookeeper8001</module>
         <module>cloud-consumer-order-zk81</module>
         <module>provider-order-payment-consul10001</module>
+        <module>cloud-consumer-order-openfeign80</module>
     </modules>
     <packaging>pom</packaging>
 
