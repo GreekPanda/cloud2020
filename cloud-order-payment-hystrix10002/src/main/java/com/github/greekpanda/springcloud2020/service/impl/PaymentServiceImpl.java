@@ -1,6 +1,8 @@
 package com.github.greekpanda.springcloud2020.service.impl;
 
 import com.github.greekpanda.springcloud2020.service.IPaymentService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -20,8 +22,12 @@ public class PaymentServiceImpl implements IPaymentService {
     }
 
     @Override
+    @HystrixCommand(fallbackMethod = "paymentInfo_timeout_handler", commandProperties = {
+            @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds", value="3000")
+    })
     public String paymentInfo_timeout(Long id) {
-        int timeout = 3000;
+        int timeout = 2000;
+        //int ret = 1/0;
         try {
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
@@ -29,5 +35,9 @@ public class PaymentServiceImpl implements IPaymentService {
         }
         String result = "当前线程号: " +  Thread.currentThread().getName() + "\t: id " + "运行超时";
         return result;
+    }
+
+    public String paymentInfo_timeout_handler(Long id) {
+        return "线程池： " + Thread.currentThread().getName() + "\t id: " + id +  "服务暂时不可用";
     }
 }
