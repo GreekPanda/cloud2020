@@ -7,7 +7,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.232:3306/springcloud2020?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/springcloud2020?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     hikari:
@@ -22,7 +22,7 @@ spring:
 
   cloud:
     consul:
-      host: 192.168.1.232
+      host: 127.0.0.1
       port: 8500
       discovery:
         service-name: ${spring.application.name}

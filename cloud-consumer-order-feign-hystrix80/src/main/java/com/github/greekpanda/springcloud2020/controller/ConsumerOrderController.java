@@ -25,7 +25,7 @@ public class ConsumerOrderController {
         return paymentService.paymentInfo_OK(id);
     }
 
-    @GetMapping(value="/consumer/paymentj/hystrix/timeout/{id}")
+    @GetMapping(value="/consumer/payment/hystrix/timeout/{id}")
     public String paymentInfo_timeout(@PathVariable("id") Long id) {
         return paymentService.paymentInfo_TimeOut(id);
     }

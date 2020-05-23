@@ -4,7 +4,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.232:3306/springcloud2020?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/springcloud2020?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT%2B8
     username: root
     password: 123456
     hikari:
@@ -19,13 +19,17 @@ spring:
 
 
 server:
-  port: 80
+  port: 82
 
 eureka:
   client:
     register-with-eureka: false   #是否将自己注册到注册中心,集群必须设置为true配合ribbon
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
+
+ribbon:
+  eureka:
+    enabled: false
 
 feign:
   hystrix:
