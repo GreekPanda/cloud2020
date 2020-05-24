@@ -9,4 +9,6 @@ public interface IPaymentService {
     String paymentInfo_ok(Long id);
 
     String paymentInfo_timeout(Long id);
+
+    String paymentI_global_timeout(Long id);
 }

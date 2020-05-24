@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590272891138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard">
+      <created>1590282364827</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590282364827</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +138,8 @@
     <MESSAGE value="Add README.md file" />
     <MESSAGE value="1.修正了导入不正确的包" />
     <MESSAGE value="1.使用消费端测试hystrix时出现了错误，Load balancer does not have available server for client: CLOUD-PROVIDER-HYSTRIX-PAYMENT，具体原因不详，先保留这个错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.使用消费端测试hystrix时出现了错误，Load balancer does not have available server for client: CLOUD-PROVIDER-HYSTRIX-PAYMENT，具体原因不详，先保留这个错误" />
+    <MESSAGE value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -140,10 +150,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1590281872880" />
-    <state x="327" y="37" key="CommitChangelistDialog2" timestamp="1590272890770">
+    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1590282364631">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="327" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590272890770" />
+    <state x="0" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590282364631" />
     <state width="1398" height="416" key="GridCell.Tab.0.bottom" timestamp="1590282009340">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -180,10 +190,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1590269178234" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590272897428">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590282370026">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590272897428" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590282370026" />
     <state x="426" y="218" width="588" height="578" key="find.popup" timestamp="1590271749571">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

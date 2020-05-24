@@ -1,6 +1,7 @@
 package com.github.greekpanda.springcloud2020.service.impl;
 
 import com.github.greekpanda.springcloud2020.service.IPaymentService;
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import lombok.extern.slf4j.Slf4j;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
+@DefaultProperties(defaultFallback = "payment_global_fallBack")
 public class PaymentServiceImpl implements IPaymentService {
     @Override
     public String paymentInfo_ok(Long id) {
@@ -41,7 +43,28 @@ public class PaymentServiceImpl implements IPaymentService {
         return result;
     }
 
+    @Override
+    @HystrixCommand
+    public String paymentI_global_timeout(Long id) {
+        //int timeout = 5000;
+        int timeout = 2000;
+        //出现异常时的错误处理
+        int ret = 1/0;
+        try {
+            Thread.sleep(timeout);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String result = "当前线程号: " +  Thread.currentThread().getName() + "\t: id " + "运行超时";
+        return result;
+    }
+
     public String paymentInfo_timeout_handler(Long id) {
         return "线程池： " + Thread.currentThread().getName() + "\t id: " + id +  "服务暂时不可用";
+    }
+
+    //全局异常处理的方法
+    public String payment_global_fallBack(Long id) {
+        return "线程池： " + Thread.currentThread().getName() + "\t id: " + id +  "默认处理信息";
     }
 }
