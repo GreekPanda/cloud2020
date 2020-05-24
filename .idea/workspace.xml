@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-consumer-order-feign-hystrix80/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order-feign-hystrix80/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order-feign-hystrix80/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590283022965</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.消费端的增加了降级处理">
+      <created>1590284171520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590284171520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +162,8 @@
     <MESSAGE value="1.使用消费端测试hystrix时出现了错误，Load balancer does not have available server for client: CLOUD-PROVIDER-HYSTRIX-PAYMENT，具体原因不详，先保留这个错误" />
     <MESSAGE value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
     <MESSAGE value="1.对于服务降级增加了全局的处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.对于服务降级增加了全局的处理" />
+    <MESSAGE value="1.消费端的增加了降级处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.消费端的增加了降级处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -169,50 +178,50 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590283141807" />
-    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1590283022791">
+    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1590284171283">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590283022791" />
-    <state width="958" height="284" key="GridCell.Tab.0.bottom" timestamp="1590283398503">
+    <state x="0" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590284171283" />
+    <state width="958" height="244" key="GridCell.Tab.0.bottom" timestamp="1590286194721">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590283398503" />
-    <state width="958" height="284" key="GridCell.Tab.0.center" timestamp="1590283398500">
+    <state width="958" height="244" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590286194721" />
+    <state width="958" height="244" key="GridCell.Tab.0.center" timestamp="1590286194719">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590283398500" />
-    <state width="958" height="284" key="GridCell.Tab.0.left" timestamp="1590283398499">
+    <state width="958" height="244" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590286194719" />
+    <state width="958" height="244" key="GridCell.Tab.0.left" timestamp="1590286194719">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590283398499" />
-    <state width="958" height="284" key="GridCell.Tab.0.right" timestamp="1590283398501">
+    <state width="958" height="244" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590286194719" />
+    <state width="958" height="244" key="GridCell.Tab.0.right" timestamp="1590286194720">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590283398501" />
-    <state width="958" height="284" key="GridCell.Tab.1.bottom" timestamp="1590283398506">
+    <state width="958" height="244" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590286194720" />
+    <state width="958" height="244" key="GridCell.Tab.1.bottom" timestamp="1590286194727">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590283398506" />
-    <state width="958" height="284" key="GridCell.Tab.1.center" timestamp="1590283398505">
+    <state width="958" height="244" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590286194727" />
+    <state width="958" height="244" key="GridCell.Tab.1.center" timestamp="1590286194724">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590283398505" />
-    <state width="958" height="284" key="GridCell.Tab.1.left" timestamp="1590283398504">
+    <state width="958" height="244" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590286194724" />
+    <state width="958" height="244" key="GridCell.Tab.1.left" timestamp="1590286194721">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590283398504" />
-    <state width="958" height="284" key="GridCell.Tab.1.right" timestamp="1590283398505">
+    <state width="958" height="244" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590286194721" />
+    <state width="958" height="244" key="GridCell.Tab.1.right" timestamp="1590286194725">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="284" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590283398505" />
+    <state width="958" height="244" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590286194725" />
     <state x="229" y="100" key="SettingsEditor" timestamp="1590269178234">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1590269178234" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590283029276">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590284175716">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590283029276" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590284175716" />
     <state x="426" y="218" width="588" height="578" key="find.popup" timestamp="1590271749571">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

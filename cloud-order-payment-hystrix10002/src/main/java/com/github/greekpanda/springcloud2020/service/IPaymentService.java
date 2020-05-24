@@ -11,4 +11,6 @@ public interface IPaymentService {
     String paymentInfo_timeout(Long id);
 
     String paymentI_global_timeout(Long id);
+
+    String paymentCircuitBreaker(Long id);
 }
