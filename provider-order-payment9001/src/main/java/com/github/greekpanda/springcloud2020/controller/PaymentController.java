@@ -63,4 +63,9 @@ public class PaymentController {
         }
         return serviceInstanceList;
     }
+
+    @GetMapping(value = "/payment/lb/{id}")
+    public CommonResult getLoadBanlance(@PathVariable Long id) {
+        return new CommonResult(200, "id ", id);
+    }
 }
