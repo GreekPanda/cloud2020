@@ -9,9 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2020/5/24 20:35
  */
 @SpringBootApplication
-public class RabbitmqProvider8801 {
+public class StreamProvider8801 {
     public static void main(String[] args) {
-        SpringApplication.run(RabbitmqProvider8801.class, args);
+        SpringApplication.run(StreamProvider8801.class, args);
     }
 
 }
