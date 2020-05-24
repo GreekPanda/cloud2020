@@ -1,4 +1,4 @@
-package com.github.greekpanda.springcloud2020.Controller;
+package com.github.greekpanda.springcloud2020.controller;
 
 import com.github.greekpanda.springcloud2020.entities.CommonResult;
 import com.github.greekpanda.springcloud2020.entities.Payment;
