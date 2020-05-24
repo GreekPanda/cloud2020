@@ -21,13 +21,17 @@ public class PaymentServiceImpl implements IPaymentService {
         return result;
     }
 
+    //设置超时的峰值，如果超过了峰值就进行fallback
+    //超时3秒之后的进入默认处理
     @Override
     @HystrixCommand(fallbackMethod = "paymentInfo_timeout_handler", commandProperties = {
             @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds", value="3000")
     })
     public String paymentInfo_timeout(Long id) {
+        //int timeout = 5000;
         int timeout = 2000;
-        //int ret = 1/0;
+        //出现异常时的错误处理
+        int ret = 1/0;
         try {
             Thread.sleep(timeout);
         } catch (InterruptedException e) {
