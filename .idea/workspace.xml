@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/src/main/java/com/github/greekpanda/springcloud2020/HystrixDashboard9001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/IPaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java/com/github/greekpanda/springcloud2020/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1cKBzZVW4VQN3VxuVXuoLx7CPkl" />
   <component name="ProjectViewState">
@@ -38,7 +48,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -47,7 +59,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConsumerOrderMain">
+  <component name="RunManager" selected="Application.HystrixDashboard9001">
+    <configuration name="HystrixDashboard9001" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.greekpanda.springcloud2020.HystrixDashboard9001" />
+      <module name="cloud-consumer-hystrix-dashboard9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.greekpanda.springcloud2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConsumerOrderMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-consumer-order-feign-hystrix80" />
       <extension name="coverage">
@@ -89,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HystrixDashboard9001" />
         <item itemvalue="Spring Boot.PaymentHystrixMain10002" />
         <item itemvalue="Spring Boot.ConsumerOrderMain" />
         <item itemvalue="Spring Boot.EurekaServer7001" />
@@ -107,6 +133,7 @@
       <updated>1590267667632</updated>
       <workItem from="1590267671261" duration="1536000" />
       <workItem from="1590269261154" duration="5259000" />
+      <workItem from="1590288195915" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -150,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590284171520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1.完成了链路熔断的代码">
+      <created>1590286685231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590286685232</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +197,8 @@
     <MESSAGE value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
     <MESSAGE value="1.对于服务降级增加了全局的处理" />
     <MESSAGE value="1.消费端的增加了降级处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.消费端的增加了降级处理" />
+    <MESSAGE value="1.完成了链路熔断的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.完成了链路熔断的代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -178,53 +213,61 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590283141807" />
-    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1590284171283">
+    <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590289218230">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590284171283" />
-    <state width="958" height="244" key="GridCell.Tab.0.bottom" timestamp="1590286194721">
+    <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
+    <state x="0" y="37" key="CommitChangelistDialog2" timestamp="1590286684962">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590286194721" />
-    <state width="958" height="244" key="GridCell.Tab.0.center" timestamp="1590286194719">
+    <state x="0" y="37" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590286684962" />
+    <state width="1398" height="416" key="GridCell.Tab.0.bottom" timestamp="1590289310514">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590286194719" />
-    <state width="958" height="244" key="GridCell.Tab.0.left" timestamp="1590286194719">
+    <state width="1398" height="416" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590289310514" />
+    <state width="1398" height="416" key="GridCell.Tab.0.center" timestamp="1590289310513">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590286194719" />
-    <state width="958" height="244" key="GridCell.Tab.0.right" timestamp="1590286194720">
+    <state width="1398" height="416" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590289310513" />
+    <state width="1398" height="416" key="GridCell.Tab.0.left" timestamp="1590289310512">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590286194720" />
-    <state width="958" height="244" key="GridCell.Tab.1.bottom" timestamp="1590286194727">
+    <state width="1398" height="416" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590289310512" />
+    <state width="1398" height="416" key="GridCell.Tab.0.right" timestamp="1590289310514">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590286194727" />
-    <state width="958" height="244" key="GridCell.Tab.1.center" timestamp="1590286194724">
+    <state width="1398" height="416" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590289310514" />
+    <state width="958" height="474" key="GridCell.Tab.1.bottom" timestamp="1590288189972">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590286194724" />
-    <state width="958" height="244" key="GridCell.Tab.1.left" timestamp="1590286194721">
+    <state width="958" height="474" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590288189972" />
+    <state width="958" height="474" key="GridCell.Tab.1.center" timestamp="1590288189971">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590286194721" />
-    <state width="958" height="244" key="GridCell.Tab.1.right" timestamp="1590286194725">
+    <state width="958" height="474" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590288189971" />
+    <state width="958" height="474" key="GridCell.Tab.1.left" timestamp="1590288189970">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="958" height="244" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590286194725" />
-    <state x="229" y="100" key="SettingsEditor" timestamp="1590269178234">
+    <state width="958" height="474" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590288189970" />
+    <state width="958" height="474" key="GridCell.Tab.1.right" timestamp="1590288189971">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1590269178234" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590284175716">
+    <state width="958" height="474" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590288189971" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1590289014591">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590284175716" />
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1590289014591" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590286826368">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590286826368" />
     <state x="426" y="218" width="588" height="578" key="find.popup" timestamp="1590271749571">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="426" y="218" width="588" height="578" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1590271749571" />
+    <state x="143" y="124" key="new project wizard" timestamp="1590287772000">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="143" y="124" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1590287772000" />
   </component>
 </project>
