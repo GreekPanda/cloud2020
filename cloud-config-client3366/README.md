@@ -1,0 +1,1 @@
+实际在使用的需要更新config server，然后通过消息总线来通知到其它的config client，config server需要使用curl或者通过postman发送post请求来完成服务器配置的生效

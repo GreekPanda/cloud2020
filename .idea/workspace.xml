@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/java/com/github/greekpanda/springcloud2020/ConfigClient3366.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/java/com/github/greekpanda/springcloud2020/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/resources/boostrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/cloud-stream-rabbitmq-provider8801.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/github/greekpanda/springcloud2020/RabbitmqProvider8801.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/github/greekpanda/springcloud2020/controller/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/github/greekpanda/springcloud2020/service/IMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/github/greekpanda/springcloud2020/service/impl/MessageProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -19,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,7 +43,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -77,7 +81,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClient3355">
+  <component name="RunManager" selected="Spring Boot.ConfigClient3366">
     <configuration name="CloudConfigCenter3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-config-center3344" />
       <extension name="coverage">
@@ -100,6 +104,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.springcloud2020.ConfigClient3355" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigClient3366" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-config-client3366" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.greekpanda.springcloud2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.springcloud2020.ConfigClient3366" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,26 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentMain9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="provider-order-payment9002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.greekpanda.springcloud2020.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.springcloud2020.PaymentMain9002" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigClient3366" />
         <item itemvalue="Spring Boot.ConfigClient3355" />
         <item itemvalue="Spring Boot.CloudConfigCenter3344" />
         <item itemvalue="Spring Boot.EurekaServer7001" />
         <item itemvalue="Spring Boot.Gateway9527" />
-        <item itemvalue="Spring Boot.PaymentMain9002" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +169,7 @@
       <updated>1590267667632</updated>
       <workItem from="1590267671261" duration="1536000" />
       <workItem from="1590269261154" duration="5259000" />
-      <workItem from="1590288195915" duration="12549000" />
+      <workItem from="1590288195915" duration="15360000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -272,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590314149884</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.新增了3366的配置客户端，用于测试消息总线上的配置生效">
+      <created>1590315604909</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590315604909</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +306,8 @@
     <MESSAGE value="1.完成Gateway中的filter来进行处理" />
     <MESSAGE value="1.添加了配置服务中心，但是对应的github的文件不存在，所以无法生效，链接也无法生效&#10;2.添加了配置的客户端&#10;3.当前无法正常的自动刷新" />
     <MESSAGE value="1.手动刷新配置生效" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.手动刷新配置生效" />
+    <MESSAGE value="1.新增了3366的配置客户端，用于测试消息总线上的配置生效" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增了3366的配置客户端，用于测试消息总线上的配置生效" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -310,50 +322,50 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1590290463118" />
-    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1590303845733">
+    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1590324351765">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590303845733" />
+    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590324351765" />
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590289218230">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
-    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590314149653">
+    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590315604601">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590314149653" />
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590314135050">
+    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590315604601" />
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590316283228">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590314135050" />
-    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590314135048">
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590316283228" />
+    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590316283227">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590314135048" />
-    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590314135048">
+    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590316283227" />
+    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590316283225">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590314135048" />
-    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590314135049">
+    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590316283225" />
+    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590316283227">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590314135049" />
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590314135052">
+    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590316283227" />
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590316283229">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590314135052" />
-    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590314135051">
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590316283229" />
+    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590316283229">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590314135051" />
-    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590314135050">
+    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590316283229" />
+    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590316283228">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590314135050" />
-    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590314135052">
+    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590316283228" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590316283229">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590314135052" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590316283229" />
     <state width="1112" height="234" key="GridCell.Tab.2.bottom" timestamp="1590294793668">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -374,17 +386,17 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1590291080126" />
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590314156288">
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2" timestamp="1590315612399">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590314156288" />
+    <state x="320" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1590315612399" />
     <state x="426" y="218" width="588" height="578" key="find.popup" timestamp="1590271749571">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="426" y="218" width="588" height="578" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1590271749571" />
-    <state x="217" y="126" key="new project wizard" timestamp="1590315121182">
+    <state x="217" y="126" key="new project wizard" timestamp="1590323391990">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="217" y="126" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1590315121182" />
+    <state x="217" y="126" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1590323391990" />
   </component>
 </project>

@@ -35,6 +35,8 @@
     <file url="file://$PROJECT_DIR$/cloud-order-payment-hystrix10002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-order-payment-hystrix10002/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-order-payment-consul10001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-order-payment-consul10001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider-order-payment-consul10001/src/main/resources" charset="UTF-8" />
