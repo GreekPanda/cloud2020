@@ -16,4 +16,6 @@ public class PaymentMain10001 {
     public static void main(String[] args) {
         SpringApplication.run(PaymentMain10001.class, args);
     }
+
+
 }
