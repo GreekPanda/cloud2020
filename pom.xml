@@ -28,6 +28,7 @@
         <module>cloud-stream-rabbitmq-provider8801</module>
         <module>cloud-stream-rabbitmq-consumer8802</module>
         <module>cloud-stream-rabbitmq-consumer8803</module>
+        <module>cloudalibaba-provider-payment9001</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -39,7 +40,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <springboot.version>2.2.6.RELEASE</springboot.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
         <mybatis-spring-boot-starter>2.1.1</mybatis-spring-boot-starter>
         <mybatis-plus-boot-starter>3.3.1</mybatis-plus-boot-starter>
         <hutool.version>5.1.5</hutool.version>
