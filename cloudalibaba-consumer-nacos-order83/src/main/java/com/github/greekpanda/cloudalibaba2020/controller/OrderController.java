@@ -20,11 +20,12 @@ public class OrderController {
     @Resource
     private RestTemplate restTemplate;
 
+    //读取配置文件
     @Value("${service-url.nacos-user-service}")
     private String serverURL;
 
     @GetMapping(value = "/consumer/payment/nacos/{id}")
-    public String paymentInfo(@PathVariable("id") Integer id) {
+    public String paymentInfo(@PathVariable("id") Long id) {
         return restTemplate.getForObject(serverURL + "/payment/nacos/" + id, String.class);
     }
 
