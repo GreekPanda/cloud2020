@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="1.新建了基于nacos的消费者模块，用于测试nacos的注册发现">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/github/greekpanda/cloudalibaba2020/ConfigNacosMain3377.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/ConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order83/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/ConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +169,9 @@
       <workItem from="1590288195915" duration="19210000" />
       <workItem from="1590329497838" duration="62000" />
       <workItem from="1590362718773" duration="7572000" />
-      <workItem from="1590414897076" duration="2331000" />
+      <workItem from="1590414897076" duration="4097000" />
+      <workItem from="1590537804459" duration="971000" />
+      <workItem from="1590558240928" duration="893000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -336,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590366265576</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1 使用了nacos作为config，但是在使用config.info这样依然会报错，提示还是未发现此种占位符，注意文件是正确的">
+      <created>1590417982004</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1590417982004</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +372,8 @@
     <MESSAGE value="1.新建了基于nacos的服务提供者" />
     <MESSAGE value="1.新建了基于nacos的服务提供者的集群" />
     <MESSAGE value="1.新建了基于nacos的消费者模块，用于测试nacos的注册发现" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.新建了基于nacos的消费者模块，用于测试nacos的注册发现" />
+    <MESSAGE value="1 使用了nacos作为config，但是在使用config.info这样依然会报错，提示还是未发现此种占位符，注意文件是正确的" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 使用了nacos作为config，但是在使用config.info这样依然会报错，提示还是未发现此种占位符，注意文件是正确的" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -390,42 +396,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
-    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590395882025">
+    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590417981727">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590395882025" />
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590417792646">
+    <state x="0" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590417981727" />
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590559129106">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590417792646" />
-    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590417792645">
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590559129106" />
+    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590559129105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590417792645" />
-    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590417792643">
+    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590559129105" />
+    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590559129105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590417792643" />
-    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590417792645">
+    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590559129105" />
+    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590559129106">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590417792645" />
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590417792648">
+    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590559129106" />
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590559129107">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590417792648" />
-    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590417792647">
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590559129107" />
+    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590559129107">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590417792647" />
-    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590417792646">
+    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590559129107" />
+    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590559129107">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590417792646" />
-    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590417792647">
+    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590559129107" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590559129107">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590417792647" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590559129107" />
     <state width="1112" height="234" key="GridCell.Tab.2.bottom" timestamp="1590294793668">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class ConfigController {
-    @Value("${test:hello}")
+    @Value("${config.info}")
     private String configInfo;
 
     @Value("${useLocalCache:false}")
@@ -21,6 +21,6 @@ public class ConfigController {
 
     @GetMapping("/config/info")
     public String getConfigInfo() {
-        return String.valueOf(useLocalCache);
+        return configInfo;
     }
 }
