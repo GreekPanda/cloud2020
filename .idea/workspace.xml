@@ -168,7 +168,7 @@
       <workItem from="1590414897076" duration="4097000" />
       <workItem from="1590537804459" duration="971000" />
       <workItem from="1590558240928" duration="2157000" />
-      <workItem from="1590624002779" duration="6631000" />
+      <workItem from="1590624002779" duration="7280000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -352,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590638027975</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="1.对于热点的访问进行了限流，包括对于热点参数和兜底处理方法">
+      <created>1590642209810</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1590642209810</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +367,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1.修正了导入不正确的包" />
     <MESSAGE value="1.使用消费端测试hystrix时出现了错误，Load balancer does not have available server for client: CLOUD-PROVIDER-HYSTRIX-PAYMENT，具体原因不详，先保留这个错误" />
     <MESSAGE value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
     <MESSAGE value="1.对于服务降级增加了全局的处理" />
@@ -385,7 +391,8 @@
     <MESSAGE value="1 使用了nacos作为config，但是在使用config.info这样依然会报错，提示还是未发现此种占位符，注意文件是正确的" />
     <MESSAGE value="1 关于nacos配种，discovery和config这两个是冲突的，而且如果添加了group和namespace也是冲突，因为添加的默认配置，所以在冲突的情况下，无法进一步验证结果，还是应该按照最简单的配置进行配置" />
     <MESSAGE value="1.修改了nacos中增加了命名空间和分组；&#10;2.增加了sentinel的模块，主要是要配合sentinel的服务器才能使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.修改了nacos中增加了命名空间和分组；&#10;2.增加了sentinel的模块，主要是要配合sentinel的服务器才能使用" />
+    <MESSAGE value="1.对于热点的访问进行了限流，包括对于热点参数和兜底处理方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.对于热点的访问进行了限流，包括对于热点参数和兜底处理方法" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -408,42 +415,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590638027482">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590642209544">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590638027482" />
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590641963437">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590642209544" />
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590642728049">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590641963437" />
-    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590641963436">
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590642728049" />
+    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590642728045">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590641963436" />
-    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590641963436">
+    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590642728045" />
+    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590642728045">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590641963436" />
-    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590641963437">
+    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590642728045" />
+    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590642728048">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590641963437" />
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590641963438">
+    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590642728048" />
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590642728051">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590641963438" />
-    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590641963438">
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590642728051" />
+    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590642728050">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590641963438" />
-    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590641963437">
+    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590642728050" />
+    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590642728050">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590641963437" />
-    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590641963438">
+    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590642728050" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590642728051">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590641963438" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590642728051" />
     <state width="1112" height="234" key="GridCell.Tab.2.bottom" timestamp="1590294793668">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

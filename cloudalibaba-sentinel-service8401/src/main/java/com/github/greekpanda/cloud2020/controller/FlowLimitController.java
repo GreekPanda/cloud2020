@@ -53,7 +53,9 @@ public class FlowLimitController {
     public String testHotKey(@RequestParam(value = "p1", required = false) String p1,
                              @RequestParam(value = "p2", required = false) String p2) {
 
-        return "testHotKey: p1= " + p1 + " p2= " + p2;
+        //如果添加了参数，这个时候兜底的方法，如果没有触发sentinel的规则，直接进入runtime的处理
+//        int i = 10 / 0;
+        return "testHotKeay: p1= " + p1 + " p2= " + p2;
     }
 
     public String dealHotKey(String p1, String p2, BlockException be) {
@@ -63,7 +65,7 @@ public class FlowLimitController {
     @GetMapping(value = "/testHotKey1")
     @SentinelResource(value = "testHotKey") //no BlockHandler
     public String testHotKey1(@RequestParam(value = "p1", required = false) String p1,
-                             @RequestParam(value = "p2", required = false) String p2) {
+                              @RequestParam(value = "p2", required = false) String p2) {
 
         return "testHotKey: p1= " + p1 + " p2= " + p2;
     }
