@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/Order84Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/service/PaymentFallbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/service/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/github/greekpanda/cloudalibaba2020/Payment9003.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/github/greekpanda/cloudalibaba2020/Payment9004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/config/ApplicationContextConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +172,7 @@
       <workItem from="1590414897076" duration="4097000" />
       <workItem from="1590537804459" duration="971000" />
       <workItem from="1590558240928" duration="2157000" />
-      <workItem from="1590624002779" duration="12543000" />
+      <workItem from="1590624002779" duration="13454000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -392,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590653829376</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="1.sentinel中使用了自定义的处理类&#10;2.使用了openfeign+sentinel+nacos实现了负载均衡的自定义的流量降级处理">
+      <created>1590656766375</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1590656766375</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1.对于服务降级增加了全局的处理" />
     <MESSAGE value="1.消费端的增加了降级处理" />
     <MESSAGE value="1.完成了链路熔断的代码" />
     <MESSAGE value="1.增加了hystrix dashboard模块用于监控hystrix作用的模块和方法" />
@@ -425,13 +416,22 @@
     <MESSAGE value="1.对于热点的访问进行了限流，包括对于热点参数和兜底处理方法" />
     <MESSAGE value="1.如果在方法中出现了runtime的异常，sentinel不会按照规则之外的出来，所以会将runtime异常正常执行" />
     <MESSAGE value="1.sentinel中使用了自定义的处理类" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.sentinel中使用了自定义的处理类" />
+    <MESSAGE value="1.sentinel中使用了自定义的处理类&#10;2.使用了openfeign+sentinel+nacos实现了负载均衡的自定义的流量降级处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.sentinel中使用了自定义的处理类&#10;2.使用了openfeign+sentinel+nacos实现了负载均衡的自定义的流量降级处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories/0.23.1440.877@0.23.1440.877" timestamp="1590269164487" />
+    <state x="361" y="75" key="#Order84Main" timestamp="1590657400366">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="361" y="75" key="#Order84Main/0.23.1440.877@0.23.1440.877" timestamp="1590657400366" />
+    <state x="361" y="75" key="#Order84Main_(1)" timestamp="1590657405450">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="361" y="75" key="#Order84Main_(1)/0.23.1440.877@0.23.1440.877" timestamp="1590657405450" />
     <state x="208" y="43" key="#Project_Structure" timestamp="1590315166888">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -448,42 +448,42 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590653828970">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590656766019">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590653828970" />
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590656658916">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590656766019" />
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590657612792">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590656658916" />
-    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590656658915">
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590657612792" />
+    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590657612791">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590656658915" />
-    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590656658914">
+    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590657612791" />
+    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590657612791">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590656658914" />
-    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590656658915">
+    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590657612791" />
+    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590657612792">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590656658915" />
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590656658917">
+    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590657612792" />
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590657612794">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
-    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590656658917">
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590657612794" />
+    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590657612793">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
-    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590656658916">
+    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590657612793" />
+    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590657612793">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590656658916" />
-    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590656658917">
+    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590657612793" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590657612794">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590657612794" />
     <state width="1112" height="234" key="GridCell.Tab.2.bottom" timestamp="1590294793668">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
