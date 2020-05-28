@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba14eb0-953f-4986-bad4-0b35ff6dc095" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/github/greekpanda/cloud2020/controller/RateLimitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/java/com/github/greekpanda/cloud2020/myHandler/MyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/Order84Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/service/PaymentFallbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/java/com/github/greekpanda/cloudalibaba2020/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-consumer-nacos-order84/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/github/greekpanda/cloudalibaba2020/Payment9003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9003/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/github/greekpanda/cloudalibaba2020/Payment9004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java/com/github/greekpanda/cloudalibaba2020/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/github/greekpanda/springcloud2020/entities/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-common/src/main/java/com/github/greekpanda/springcloud2020/entities/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -61,12 +75,15 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.greekpanda.cloudalibaba2020.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/resources" />
+      <recent name="$PROJECT_DIR$/cloudalibaba-provider-payment9004/src/main/java" />
       <recent name="$PROJECT_DIR$/cloudalibaba-sentinel-service8401/src/main/resources" />
       <recent name="$PROJECT_DIR$/cloudalibaba-config-nacos-client3377/src/main/resources" />
       <recent name="$PROJECT_DIR$/cloudalibaba-provider-payment9002/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,29 +93,42 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SentinelMain8401">
-    <configuration name="ConfigNacosMain3377" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-config-nacos-client3377" />
+  <component name="RunManager" selected="Spring Boot.Order84Main">
+    <configuration name="Order84Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-consumer-nacos-order84" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.greekpanda.cloudalibaba2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.ConfigNacosMain3377" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.Order84Main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderNacosMain83" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-consumer-nacos-order83" />
+    <configuration name="Payment9003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-payment9003" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.greekpanda.cloudalibaba2020.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.OrderNacosMain83" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.Payment9003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Payment9004" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloudalibaba-provider-payment9004" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.greekpanda.cloudalibaba2020.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.Payment9004" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,19 +142,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.springcloud2020.PaymentMain9001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProviderPayment9002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloudalibaba-provider-payment9002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.greekpanda.cloudalibaba2020.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.greekpanda.cloudalibaba2020.ProviderPayment9002" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Order84Main" />
+        <item itemvalue="Spring Boot.Payment9004" />
+        <item itemvalue="Spring Boot.Payment9003" />
         <item itemvalue="Spring Boot.SentinelMain8401" />
         <item itemvalue="Spring Boot.PaymentMain9001" />
-        <item itemvalue="Spring Boot.ConfigNacosMain3377" />
-        <item itemvalue="Spring Boot.OrderNacosMain83" />
-        <item itemvalue="Spring Boot.ProviderPayment9002" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +187,7 @@
       <workItem from="1590414897076" duration="4097000" />
       <workItem from="1590537804459" duration="971000" />
       <workItem from="1590558240928" duration="2157000" />
-      <workItem from="1590624002779" duration="9647000" />
+      <workItem from="1590624002779" duration="12543000" />
     </task>
     <task id="LOCAL-00001" summary="Add README.md file">
       <created>1590267796664</created>
@@ -368,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590642948476</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="1.sentinel中使用了自定义的处理类">
+      <created>1590653829376</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1590653829376</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="1,增加了注释；2.通过修改workspace.xml来展示idea的dashboard" />
     <MESSAGE value="1.对于服务降级增加了全局的处理" />
     <MESSAGE value="1.消费端的增加了降级处理" />
     <MESSAGE value="1.完成了链路熔断的代码" />
@@ -401,7 +424,8 @@
     <MESSAGE value="1.修改了nacos中增加了命名空间和分组；&#10;2.增加了sentinel的模块，主要是要配合sentinel的服务器才能使用" />
     <MESSAGE value="1.对于热点的访问进行了限流，包括对于热点参数和兜底处理方法" />
     <MESSAGE value="1.如果在方法中出现了runtime的异常，sentinel不会按照规则之外的出来，所以会将runtime异常正常执行" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.如果在方法中出现了runtime的异常，sentinel不会按照规则之外的出来，所以会将runtime异常正常执行" />
+    <MESSAGE value="1.sentinel中使用了自定义的处理类" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.sentinel中使用了自定义的处理类" />
   </component>
   <component name="WindowStateProjectService">
     <state x="627" y="354" width="415" height="252" key="#Custom_Plugin_Repositories" timestamp="1590269164487">
@@ -416,50 +440,50 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1590290463118" />
-    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1590325540599">
+    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1590656340494">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590325540599" />
+    <state x="533" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1590656340494" />
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1590289218230">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="471" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.877@0.23.1440.877" timestamp="1590289218229" />
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590642948235">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2" timestamp="1590653828970">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590642948235" />
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590653200442">
+    <state x="405" y="23" width="858" height="877" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1590653828970" />
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom" timestamp="1590656658916">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590653200442" />
-    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590653200441">
+    <state width="1112" height="352" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590656658916" />
+    <state width="1112" height="352" key="GridCell.Tab.0.center" timestamp="1590656658915">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590653200441" />
-    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590653200441">
+    <state width="1112" height="352" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1590656658915" />
+    <state width="1112" height="352" key="GridCell.Tab.0.left" timestamp="1590656658914">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590653200441" />
-    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590653200442">
+    <state width="1112" height="352" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1590656658914" />
+    <state width="1112" height="352" key="GridCell.Tab.0.right" timestamp="1590656658915">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590653200442" />
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590653200443">
+    <state width="1112" height="352" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1590656658915" />
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom" timestamp="1590656658917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590653200443" />
-    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590653200443">
+    <state width="1112" height="352" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
+    <state width="1112" height="352" key="GridCell.Tab.1.center" timestamp="1590656658917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590653200443" />
-    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590653200443">
+    <state width="1112" height="352" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
+    <state width="1112" height="352" key="GridCell.Tab.1.left" timestamp="1590656658916">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590653200443" />
-    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590653200443">
+    <state width="1112" height="352" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1590656658916" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right" timestamp="1590656658917">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590653200443" />
+    <state width="1112" height="352" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1590656658917" />
     <state width="1112" height="234" key="GridCell.Tab.2.bottom" timestamp="1590294793668">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -488,9 +512,9 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="426" y="218" width="588" height="578" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1590271749571" />
-    <state x="217" y="126" key="new project wizard" timestamp="1590635928257">
+    <state x="206" y="125" key="new project wizard" timestamp="1590655525513">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="217" y="126" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1590635928257" />
+    <state x="206" y="125" key="new project wizard/0.23.1440.877@0.23.1440.877" timestamp="1590655525513" />
   </component>
 </project>
